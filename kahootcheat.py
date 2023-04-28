@@ -1,7 +1,7 @@
 import urllib.request as ur
 import json
 
-gameid = input("Enter game id: ")
+gameid = input("Enter game id:2830e05d-7358-4f26-bcd9-4122c0b0dfe5_1682691182108 ")
 url = "https://play.kahoot.it/rest/kahoots/" + gameid
 q = json.loads(ur.urlopen(url).read())["questions"]
 colours = ["red", "blue", "yellow", "green"]
